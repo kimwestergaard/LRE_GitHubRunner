@@ -11,8 +11,8 @@ jobs:
     runs-on: LRE
     name: Execute test
     env:
-      lre_username: ${{ secrets.LRE_USERNAME }}
-      lre_password: ${{ secrets.LRE_PASSWORD }}
+      lre_username: 'kwestergaard.lre'
+      lre_password: 'Password1'
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
