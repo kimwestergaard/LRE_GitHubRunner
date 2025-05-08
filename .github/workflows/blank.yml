@@ -34,7 +34,7 @@ jobs:
         with:
           lre_action: ExecuteLreTest
           lre_description: running exsisting test
-          lre_server: https://lreorgdemo.saas.microfocus.com/
+          lre_server: https://lreorgdemo.saas.microfocus.com/LRE/?tenant=63acd16e-6797-431a-b734-788ab1ef1db9
           lre_https_protocol: true
           lre_authenticate_with_token: true
           lre_domain: DEFAULT
