@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    runs-on: LRE
+    runs-on: ubuntu-latest
     name: Execute test
     env:
       lre_username: 'I_KEY_0b0110b6-5687-4b09-910d-749bbc86b064'
