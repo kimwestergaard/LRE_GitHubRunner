@@ -11,8 +11,8 @@ jobs:
     runs-on: LRE
     name: Execute test
     env:
-      lre_username: 'kwestergaard.lre'
-      lre_password: 'Password1'
+      lre_username: I_KEY_0b0110b6-5687-4b09-910d-749bbc86b064
+      lre_password: S_KEY_303bb433-0e8d-4202-bcf6-29cc89e3b85a
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -32,10 +32,10 @@ jobs:
         uses: MicroFocus/lre-gh-action@v1.0.3
         with:
           lre_action: ExecuteLreTest
-          lre_description: running new yaml test
+          lre_description: running exsisting test
           lre_server: https://lreorgdemo.saas.microfocus.com/
           lre_https_protocol: true
-          lre_authenticate_with_token: false
+          lre_authenticate_with_token: true
           lre_domain: DEFAULT
           lre_project: kwestergaard_project
           lre_test: 186
